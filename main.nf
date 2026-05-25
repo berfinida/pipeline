@@ -48,13 +48,8 @@ workflow {
 
     // 7. Prepare gene expression matrix from Salmon quant.sf files
     salmon_ch
+        .map { sample_id, quant -> quant }
         .collect()
-        .map { quant_list ->
-            def sample_ids = quant_list.collect { it[0] }
-            def quant_files = quant_list.collect { it[1] }
-            def manifest = [sample_ids, quant_files].transpose().collect { sample, quant -> "${sample}\t${quant.name}" }.join('\n')
-            tuple(file("scripts/build_expression_matrix.py"), manifest, quant_files)
-        }
         | EXPR_MATRIX
 }
 
@@ -65,15 +60,16 @@ process EXPR_MATRIX {
     tag "expression_matrix"
     publishDir "${params.outdir}/matrix", mode: 'copy'
     input:
-        tuple path(matrix_script), val(manifest), path(quant_files)
+        path(quant_files)
     output:
         path("expression_matrix.tsv")
     script:
 """
-cat > manifest.tsv <<'EOF'
-${manifest}
-EOF
-python3 ${matrix_script} manifest.tsv expression_matrix.tsv
+for q in *.quant.sf; do
+  s=\${q%.quant.sf}
+  printf "%s\\t%s\\n" "\$s" "\$q" >> manifest.tsv
+done
+python3 ${projectDir}/scripts/build_expression_matrix.py manifest.tsv expression_matrix.tsv
 """
 }
 // End of main.nf

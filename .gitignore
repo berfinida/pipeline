@@ -1,7 +1,14 @@
-.nextflow/
 work/
-results/
-.nextflow.log*
+.nextflow*
+data/*.fastq
+data/*.fastq.gz
+refs/*.fa
+refs/*.fa.gz
+refs/salmon_index/
+results/fastp/
+results/fastqc/
+results/salmon/
+results/multiqc/
 *.pyc
 __pycache__/
 .DS_Store

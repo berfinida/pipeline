@@ -9,9 +9,9 @@ process FASTP {
     tuple val(sample_id), path(reads)
 
     output:
-        tuple val(sample_id), \
-              path("${sample_id}.trimmed.fastq.gz"), \
-              path("${sample_id}_fastp.json"), \
+        tuple val(sample_id),
+              path("${sample_id}.trimmed.fastq.gz"),
+              path("${sample_id}_fastp.json"),
               path("${sample_id}_fastp.html")
 
     script:

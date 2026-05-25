@@ -13,7 +13,7 @@ process SALMON {
 
     script:
     """
-    salmon quant -i ${params.salmon_index} -l A \
+    salmon quant -i ${params.salmon_index.startsWith('/') ? params.salmon_index : "${projectDir}/${params.salmon_index}"} -l A \
         -r ${trimmed_reads} \
         -p ${task.cpus} \
         --validateMappings \
