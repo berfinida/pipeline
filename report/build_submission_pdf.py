@@ -95,7 +95,9 @@ def main():
     story.append(Paragraph("4. Supplementary Items (SI)", h1))
     si = [
         "GitHub repository: https://github.com/berfinida/pipeline",
-        "Dataset IDs: GSE156496 / SRP278118; SRR12478073, SRR12478074, SRR12478076, SRR12478077",
+        "GEO: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE156496",
+        "SRA project: https://www.ncbi.nlm.nih.gov/sra?term=SRP278118",
+        "Runs: https://www.ncbi.nlm.nih.gov/sra/SRR12478073, https://www.ncbi.nlm.nih.gov/sra/SRR12478074, https://www.ncbi.nlm.nih.gov/sra/SRR12478076, https://www.ncbi.nlm.nih.gov/sra/SRR12478077",
         "Run command: nextflow run main.nf -profile conda --samplesheet samplesheet.csv --outdir results --salmon_index \"$PWD/refs/salmon_index\" -resume",
         "Software: Nextflow DSL2, FastQC, fastp, Salmon, MultiQC, Python (pandas)",
         "Raw FASTQ files and Salmon index are excluded from GitHub due to file size",

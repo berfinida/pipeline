@@ -51,6 +51,13 @@ In addition, a descriptive TPM-based comparison step was added to summarize mean
 - Study IDs: GSE156496 / SRP278118
 - Runs: SRR12478073, SRR12478074, SRR12478076, SRR12478077
 - GSM IDs: GSM4732625, GSM4732626, GSM4732628, GSM4732629
+- GEO link: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE156496
+- SRA project link: https://www.ncbi.nlm.nih.gov/sra?term=SRP278118
+- Run links:
+  - https://www.ncbi.nlm.nih.gov/sra/SRR12478073
+  - https://www.ncbi.nlm.nih.gov/sra/SRR12478074
+  - https://www.ncbi.nlm.nih.gov/sra/SRR12478076
+  - https://www.ncbi.nlm.nih.gov/sra/SRR12478077
 
 ### SI-3. Run command
 ```bash

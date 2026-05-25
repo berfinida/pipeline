@@ -3,14 +3,21 @@
 This project is a modular Nextflow pipeline for transcriptome-level comparison of Duchenne Muscular Dystrophy (DMD) vs wild-type (WT) samples using single-end RNA-seq.
 
 ## Dataset Accession IDs
-Use the real accession IDs for the FASTQ files you downloaded.
+Source: NCBI GEO/SRA
 
-- Study accession: `<GSE/SRP_ID>`
+- GEO series: `GSE156496`  
+  https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE156496
+- SRA project: `SRP278118`  
+  https://www.ncbi.nlm.nih.gov/sra?term=SRP278118
 - Run accessions mapped in this project:
-  - `WT1` -> `<SRR_ID>`
-  - `WT2` -> `<SRR_ID>`
-  - `DMD1` -> `<SRR_ID>`
-  - `DMD2` -> `<SRR_ID>`
+  - `WT1` -> `SRR12478073`  
+    https://www.ncbi.nlm.nih.gov/sra/SRR12478073
+  - `WT2` -> `SRR12478074`  
+    https://www.ncbi.nlm.nih.gov/sra/SRR12478074
+  - `DMD1` -> `SRR12478076`  
+    https://www.ncbi.nlm.nih.gov/sra/SRR12478076
+  - `DMD2` -> `SRR12478077`  
+    https://www.ncbi.nlm.nih.gov/sra/SRR12478077
 
 Current `samplesheet.csv` expects:
 
