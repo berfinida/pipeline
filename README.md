@@ -1,6 +1,6 @@
 # DMD vs WT Single-End RNA-seq Pipeline (Nextflow DSL2)
 
-This project is a modular Nextflow pipeline for transcriptome-level comparison of Duchenne Muscular Dystrophy (DMD) vs wild-type (WT) samples using single-end RNA-seq.
+This project is a modular Nextflow pipeline for transcriptome-level comparison of WT vs DMD ΔEx51 mouse tibialis anterior muscle RNA-seq data (single-end).
 
 ## Dataset Accession IDs
 Source: NCBI GEO/SRA

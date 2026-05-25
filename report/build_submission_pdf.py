@@ -48,9 +48,9 @@ def main():
     story.append(PageBreak())
 
     story.append(Paragraph("1. Introduction", h1))
-    story.append(Paragraph("Duchenne muscular dystrophy (DMD) is a progressive neuromuscular disorder caused by mutations in the dystrophin gene. RNA-seq provides a robust approach to investigate transcriptomic differences between DMD and wild-type (WT) muscle samples. In this study, a modular and reproducible single-end RNA-seq workflow was implemented with Nextflow DSL2.", body))
+    story.append(Paragraph("Duchenne muscular dystrophy (DMD) is a progressive neuromuscular disorder caused by mutations in the dystrophin gene. RNA-seq provides a robust approach to investigate transcriptomic differences between DMD and wild-type (WT) muscle samples. In this study, a modular and reproducible workflow was implemented with Nextflow DSL2 for single-end WT vs DMD ΔEx51 mouse tibialis anterior muscle RNA-seq data.", body))
     story.append(Spacer(1, 6))
-    story.append(Paragraph("The selected public dataset was GSE156496 / SRP278118, including two WT and two DMD (Delta 51) samples. The aim was to generate a reproducible end-to-end pipeline from raw FASTQ files to a transcript-level expression matrix.", body))
+    story.append(Paragraph("The selected public dataset was GSE156496 / SRP278118 (mouse DMD ΔEx51 model RNA-seq dataset), including two WT and two DMD ΔEx51 samples. The aim was to generate a reproducible end-to-end pipeline from raw FASTQ files to a transcript-level expression matrix.", body))
 
     story.append(Paragraph("2. Methods", h1))
     story.append(Paragraph("2.1 Dataset and sample selection", h2))

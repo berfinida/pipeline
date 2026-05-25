@@ -1,9 +1,9 @@
 # DMD vs WT Single-End RNA-seq Analysis Pipeline Using Nextflow DSL2
 
 ## 1. Introduction
-Duchenne muscular dystrophy (DMD) is a progressive neuromuscular disorder caused by mutations in the dystrophin gene. RNA-seq provides a robust strategy for investigating transcriptomic differences between DMD and wild-type (WT) muscle samples. In this study, a reproducible and modular analysis workflow was implemented using Nextflow DSL2 for single-end RNA-seq data.
+Duchenne muscular dystrophy (DMD) is a progressive neuromuscular disorder caused by mutations in the dystrophin gene. RNA-seq provides a robust strategy for investigating transcriptomic differences between DMD and wild-type (WT) muscle samples. In this study, a reproducible and modular analysis workflow was implemented using Nextflow DSL2 for single-end WT vs DMD ΔEx51 mouse tibialis anterior muscle RNA-seq data.
 
-The selected public dataset was GSE156496 / SRP278118, with two WT and two DMD (Delta 51) samples. The objective was to establish a reproducible end-to-end pipeline from raw reads to a comparable transcript-level expression matrix.
+The selected public dataset was GSE156496 / SRP278118 (mouse DMD ΔEx51 model RNA-seq dataset), with two WT and two DMD ΔEx51 samples. The objective was to establish a reproducible end-to-end pipeline from raw reads to a comparable transcript-level expression matrix.
 
 ## 2. Methods
 ### 2.1 Dataset and sample selection
