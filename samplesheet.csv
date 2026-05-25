@@ -1,0 +1,5 @@
+sample,fastq_1
+WT1,data/WT1_R1.fastq.gz
+WT2,data/WT2_R1.fastq.gz
+DMD1,data/DMD1_R1.fastq.gz
+DMD2,data/DMD2_R1.fastq.gz
